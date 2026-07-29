@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pause Breathe Logo Variants</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: #071f34;
+      color: #f3ecdf;
+      padding: 40px 20px;
+    }
+    h1 { text-align: center; margin-bottom: 12px; font-size: 2rem; }
+    .subtitle { text-align: center; color: rgba(243, 236, 223, 0.72); margin-bottom: 40px; }
+    .main-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+    .main-logo-card {
+      background: rgba(6, 34, 54, 0.94);
+      border: 1px solid rgba(186, 223, 219, 0.2);
+      border-radius: 24px;
+      padding: 48px;
+      text-align: center;
+    }
+    .main-logo-card h2 { color: #9fd8d0; margin-bottom: 16px; }
+    .main-logo-card p { color: rgba(243, 236, 223, 0.72); margin-bottom: 24px; }
+    .main-logo-svg { width: 200px; height: 200px; }
+    .variants-title { text-align: center; margin: 48px 0 24px; color: #9fd8d0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(6, 34, 54, 0.94);
+      border: 1px solid rgba(186, 223, 219, 0.2);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); }
+    .card h3 { margin-bottom: 8px; color: #9fd8d0; }
+    .card p { font-size: 0.9rem; color: rgba(243, 236, 223, 0.72); margin-bottom: 16px; }
+    .logo-container {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 16px;
+    }
+    .logo-container svg { width: 100%; height: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Pause Breathe Logo</h1>
+  <p class="subtitle">自由潛水呼吸訓練計時器 — 品牌識別設計</p>
+
+  <!-- Main Logo -->
+  <div class="main-logo">
+    <div class="main-logo-card">
+      <h2>主 Logo：潛水面鏡</h2>
+      <p>由兩個菱形組成的潛水面鏡，波浪貫穿其中，代表呼吸與海洋的沉浸感</p>
+      <svg class="main-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="20" fill="#071f34"/>
+        <!-- Left diamond -->
+        <polygon points="25,38 37,28 49,38 37,48" stroke="#9fd8d0" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <!-- Right diamond -->
+        <polygon points="51,38 63,28 75,38 63,48" stroke="#9fd8d0" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <!-- Nose bridge -->
+        <line x1="49" y1="38" x2="51" y2="38" stroke="#9fd8d0" stroke-width="2.5"/>
+        <!-- Waves at 40% position -->
+        <path d="M15,44 Q25,40 35,44 Q45,48 55,44 Q65,40 75,44 Q85,48 95,44" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+        <path d="M15,48 Q25,44 35,48 Q45,52 55,48 Q65,44 75,48 Q85,52 95,48" stroke="rgba(159,216,208,0.5)" stroke-width="1.5" fill="none"/>
+        <path d="M15,52 Q25,48 35,52 Q45,56 55,52 Q65,48 75,52 Q85,56 95,52" stroke="rgba(159,216,208,0.25)" stroke-width="1" fill="none"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Variants -->
+  <h2 class="variants-title">設計變體</h2>
+  <div class="grid">
+
+    <!-- Variant 1: Standard -->
+    <div class="card">
+      <h3>V1: 標準版</h3>
+      <p>兩個菱形 + 鼻樑 + 波浪貫穿</p>
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#071f34"/>
+          <polygon points="25,38 37,28 49,38 37,48" stroke="#9fd8d0" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <polygon points="51,38 63,28 75,38 63,48" stroke="#9fd8d0" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <line x1="49" y1="38" x2="51" y2="38" stroke="#9fd8d0" stroke-width="2.5"/>
+          <path d="M15,44 Q25,40 35,44 Q45,48 55,44 Q65,40 75,44 Q85,48 95,44" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+          <path d="M15,48 Q25,44 35,48 Q45,52 55,48 Q65,44 75,48 Q85,52 95,48" stroke="rgba(159,216,208,0.5)" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <p>簡潔的面鏡設計，波浪在40%位置</p>
+    </div>
+
+    <!-- Variant 2: Filled diamonds -->
+    <div class="card">
+      <h3>V2: 填充版</h3>
+      <p>菱形內部填色，更強調面鏡</p>
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#071f34"/>
+          <polygon points="25,38 37,28 49,38 37,48" stroke="#9fd8d0" stroke-width="2" fill="rgba(159,216,208,0.15)" stroke-linejoin="round"/>
+          <polygon points="51,38 63,28 75,38 63,48" stroke="#9fd8d0" stroke-width="2" fill="rgba(159,216,208,0.15)" stroke-linejoin="round"/>
+          <line x1="49" y1="38" x2="51" y2="38" stroke="#9fd8d0" stroke-width="2.5"/>
+          <path d="M15,44 Q25,40 35,44 Q45,48 55,44 Q65,40 75,44 Q85,48 95,44" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+          <path d="M15,48 Q25,44 35,48 Q45,52 55,48 Q65,44 75,48 Q85,52 95,48" stroke="rgba(159,216,208,0.5)" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <p>菱形內部有半透明填充，增加層次感</p>
+    </div>
+
+    <!-- Variant 3: Thicker lines -->
+    <div class="card">
+      <h3>V3: 粗線條版</h3>
+      <p>加粗線條，更現代感</p>
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#071f34"/>
+          <polygon points="25,38 37,28 49,38 37,48" stroke="#9fd8d0" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+          <polygon points="51,38 63,28 75,38 63,48" stroke="#9fd8d0" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+          <line x1="49" y1="38" x2="51" y2="38" stroke="#9fd8d0" stroke-width="3.5"/>
+          <path d="M15,44 Q25,40 35,44 Q45,48 55,44 Q65,40 75,44 Q85,48 95,44" stroke="#9fd8d0" stroke-width="2.5" fill="none"/>
+          <path d="M15,48 Q25,44 35,48 Q45,52 55,48 Q65,44 75,48 Q85,52 95,48" stroke="rgba(159,216,208,0.5)" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <p>使用更粗的線條，現代感更強</p>
+    </div>
+
+    <!-- Variant 4: Wave dominant -->
+    <div class="card">
+      <h3>V4: 波浪為主</h3>
+      <p>波浪更大更明顯，強調海洋元素</p>
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#071f34"/>
+          <polygon points="25,38 37,28 49,38 37,48" stroke="#9fd8d0" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <polygon points="51,38 63,28 75,38 63,48" stroke="#9fd8d0" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <line x1="49" y1="38" x2="51" y2="38" stroke="#9fd8d0" stroke-width="2"/>
+          <path d="M10,42 Q20,36 30,42 Q40,48 50,42 Q60,36 70,42 Q80,48 90,42" stroke="#9fd8d0" stroke-width="3" fill="none"/>
+          <path d="M10,48 Q20,42 30,48 Q40,54 50,48 Q60,42 70,48 Q80,54 90,48" stroke="rgba(159,216,208,0.6)" stroke-width="2" fill="none"/>
+          <path d="M10,54 Q20,48 30,54 Q40,60 50,54 Q60,48 70,54 Q80,60 90,54" stroke="rgba(159,216,208,0.3)" stroke-width="1.5" fill="none"/>
+          <path d="M10,60 Q20,54 30,60 Q40,66 50,60 Q60,54 70,60 Q80,66 90,60" stroke="rgba(159,216,208,0.15)" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+      <p>波浪更粗更多層，強調海洋沉浸感</p>
+    </div>
+
+    <!-- Variant 5: Minimal -->
+    <div class="card">
+      <h3>V5: 極簡版</h3>
+      <p>最簡化的設計，適合小尺寸</p>
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="#071f34"/>
+          <polygon points="30,40 40,32 50,40 40,48" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+          <polygon points="50,40 60,32 70,40 60,48" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+          <line x1="50" y1="40" x2="50" y2="40" stroke="#9fd8d0" stroke-width="2"/>
+          <path d="M20,50 Q35,44 50,50 Q65,56 80,50" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <p>極簡設計，適合小尺寸圖示</p>
+    </div>
+
+    <!-- Variant 6: Gradient waves -->
+    <div class="card">
+      <h3>V6: 漸層波浪</h3>
+      <p>波浪使用漸層色彩，更生動</p>
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#9fd8d0;stop-opacity:0.8"/>
+              <stop offset="100%" style="stop-color:#9fd8d0;stop-opacity:0.1"/>
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="20" fill="#071f34"/>
+          <polygon points="25,38 37,28 49,38 37,48" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+          <polygon points="51,38 63,28 75,38 63,48" stroke="#9fd8d0" stroke-width="2" fill="none"/>
+          <line x1="49" y1="38" x2="51" y2="38" stroke="#9fd8d0" stroke-width="2"/>
+          <path d="M15,42 Q25,38 35,42 Q45,46 55,42 Q65,38 75,42 Q85,46 95,42" stroke="url(#waveGrad)" stroke-width="2.5" fill="none"/>
+          <path d="M15,48 Q25,44 35,48 Q45,52 55,48 Q65,44 75,48 Q85,52 95,48" stroke="rgba(159,216,208,0.4)" stroke-width="2" fill="none"/>
+          <path d="M15,54 Q25,50 35,54 Q45,58 55,54 Q65,50 75,54 Q85,58 95,54" stroke="rgba(159,216,208,0.2)" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <p>波浪使用SVG漸層，從實到透</p>
+    </div>
+
+  </div>
+</body>
+</html>
